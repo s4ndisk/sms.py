@@ -1,10 +1,14 @@
+# script created by s4ndisk on 01/14/2024
+# github is https://github/s4ndisk/sms.py/
+
 # script imports
 import argparse
 import time
+import requests
    
 # initialize parser
 parser = argparse.ArgumentParser(
-    description='For your convinience, you can buy an API key at https://textbelt.com/purchase/ and set is as the default key in the code instead of typing it in everytime :)\n\nThis script was intended from anonymous SMS messages, so it is recommended that you connect to the TOR network before using this script. Traffic was analyzed using wireshark and can be viewed on the github',
+    description='For your convinience, you can buy an API key at https://textbelt.com/purchase/ and set is as the default key in the code instead of typing it in everytime :)\n\nThis script was intended from anonymous SMS messages, so it is recommended that you connect to the TOR network before using this script.',
     formatter_class=argparse.RawDescriptionHelpFormatter,
     epilog='Examples:\n    sms.py 1234567890 "you can format the number like this" [your_api_key]\n    sms.py 123-456-7890 "or you can format the number like this"' 
 )
@@ -44,7 +48,6 @@ else:
   None
 
 # the basic setup
-import requests
 resp = requests.post('https://textbelt.com/text', {
   'phone': args.phone,
   'message': args.message,
