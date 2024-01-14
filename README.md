@@ -3,7 +3,7 @@ Send SMS from random numbers using Textbelt API
 
 After testing I realized that the free text per day is tied to the IP that made the request
 
-*IF YOU WANT TO STAY ANONYMOUS, MAKE THE REQUEST OF THE TOR NETWORK*
+*IF YOU WANT TO STAY ANONYMOUS, MAKE THE REQUEST OVER THE TOR NETWORK*
 
 Example Output
 
