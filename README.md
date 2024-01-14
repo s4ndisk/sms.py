@@ -1,7 +1,7 @@
 # sms.py
 Send SMS from random numbers using Textbelt API
 
-After testing I realized that the free text per day is tied to the IP that made the request
+After testing I realized that the free text per day is tied to the IP that made the request (or the number you are trying to send to idk for sure yet)
 
 *IF YOU WANT TO STAY ANONYMOUS, MAKE THE REQUEST OVER THE TOR NETWORK*
 
@@ -27,4 +27,4 @@ Examples:
     sms.py 1234567890 "you can format the number like this" [your_api_key]
     sms.py 123-456-7890 "or you can format the number like this"
 ```
-
+You can buy texts at https://textbelt.com/purchase/?generateKey=1
